@@ -62,6 +62,34 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-C语言写友好函数" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/05/C语言写友好函数/" class="article-date">
+  <time datetime="2019-05-05T08:37:09.014Z" itemprop="datePublished">2019-05-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>д������������������Ϊ������������������Ѻõģ�����t�����򷵻�f�����������ÿ����Լ���ͣ����˱������⣩���ڶԷ������������������Ѻõġ������磺1184��Լ�����У�1+2+4+8+16+32+37+74+148+296+592=1210��1210��Լ�����У�1+2+5+10+11+22+55+110+121+242+605=1184����������Ѻõġ���</p>
+<p>#include &lt;stdio.h&gt;<br>int facsum(int n)<br>{<br>    int x=0;<br>    for(int i=1;i&lt;n;i++)<br>    if (n%i==0)<br>        x+=i;<br>    return x;<br>}<br>int main()<br>{<br>   int m,n;<br>   printf(“��������������:\n”);<br>   scanf(“%d %d”,&amp;m,&amp;n);<br>   if (facsum(n)==m&amp;&amp;facsum(m)==n)<br>    {<br>        printf(“%d��%d����Ԫ\n”,m,n);<br>    }<br>    else<br>    {<br>        printf(“%d��%d������Ԫ\n”,m,n);<br>    }<br>        return 0;<br>}</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/05/C语言写友好函数/" data-id="cjvaoo72i0000kkglqoxkeikz" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-filename" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/05/05/filename/" class="article-date">
@@ -89,7 +117,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/05/filename/" data-id="cjvai3yl30000pggl7jcaans1" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/05/filename/" data-id="cjvaoo72w0001kkgl9c19t98w" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/新建-模板-小书匠/">新建,模板,小书匠</a></li></ul>
@@ -136,7 +164,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/04/hello-world/" data-id="cjvai3ylg0001pgglzlqc23hu" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/04/hello-world/" data-id="cjvaoo7350002kkglnvjrlt6g" class="article-share-link">Share</a>
       
       
     </footer>
@@ -189,6 +217,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/05/05/C语言写友好函数/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2019/05/05/filename/">啛啛喳喳</a>
