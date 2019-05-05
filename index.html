@@ -62,27 +62,39 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-C语言写友好函数" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-filename" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/05/05/C语言写友好函数/" class="article-date">
-  <time datetime="2019-05-05T08:37:09.014Z" itemprop="datePublished">2019-05-05</time>
+    <a href="/2019/05/05/filename/" class="article-date">
+  <time datetime="2019-05-05T10:01:37.886Z" itemprop="datePublished">2019-05-05</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/05/filename/">C语言写友好函数</a>
+    </h1>
+  
+
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <p>д������������������Ϊ������������������Ѻõģ�����t�����򷵻�f�����������ÿ����Լ���ͣ����˱������⣩���ڶԷ������������������Ѻõġ������磺1184��Լ�����У�1+2+4+8+16+32+37+74+148+296+592=1210��1210��Լ�����У�1+2+5+10+11+22+55+110+121+242+605=1184����������Ѻõġ���</p>
-<p>#include &lt;stdio.h&gt;<br>int facsum(int n)<br>{<br>    int x=0;<br>    for(int i=1;i&lt;n;i++)<br>    if (n%i==0)<br>        x+=i;<br>    return x;<br>}<br>int main()<br>{<br>   int m,n;<br>   printf(“��������������:\n”);<br>   scanf(“%d %d”,&amp;m,&amp;n);<br>   if (facsum(n)==m&amp;&amp;facsum(m)==n)<br>    {<br>        printf(“%d��%d����Ԫ\n”,m,n);<br>    }<br>    else<br>    {<br>        printf(“%d��%d������Ԫ\n”,m,n);<br>    }<br>        return 0;<br>}</p>
+        <p>写函数，以两个正整数为参数，如果该两数是友好的，返回t，否则返回f。如果这两个每个的约数和（除了本身以外）等于对方整数，则称这对数是友好的。（例如：1184的约数和有：1+2+4+8+16+32+37+74+148+296+592=1210；1210的约数和有：1+2+5+10+11+22+55+110+121+242+605=1184。这对数是友好的。）</p>
+<p>#include &lt;stdio.h&gt;<br>int facsum(int n)<br>{<br>    int x=0;<br>    for(int i=1;i&lt;n;i++)<br>    if (n%i==0)<br>        x+=i;<br>    return x;<br>}<br>int main()<br>{<br>   int m,n;<br>   printf(“请输入两个整数:\n”);<br>   scanf(“%d %d”,&amp;m,&amp;n);<br>   if (facsum(n)==m&amp;&amp;facsum(m)==n)<br>    {<br>        printf(“%d和%d是友元\n”,m,n);<br>    }<br>    else<br>    {<br>        printf(“%d和%d不是友元\n”,m,n);<br>    }<br>        return 0;<br>}</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/05/C语言写友好函数/" data-id="cjvaqlscs0000c4glr6b2jm5j" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/05/filename/" data-id="cjvarssm100000sgltlwxevf9" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C语言-友好-友好函数/">C语言,友好,友好函数</a></li></ul>
+
     </footer>
   </div>
   
@@ -100,9 +112,23 @@
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C语言-友好-友好函数/">C语言,友好,友好函数</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/C语言-友好-友好函数/" style="font-size: 10px;">C语言,友好,友好函数</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
@@ -121,7 +147,7 @@
       <ul>
         
           <li>
-            <a href="/2019/05/05/C语言写友好函数/">(no title)</a>
+            <a href="/2019/05/05/filename/">C语言写友好函数</a>
           </li>
         
       </ul>

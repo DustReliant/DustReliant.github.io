@@ -5,15 +5,20 @@
   
 
   
-  <title>Archives | Hexo</title>
+  <title>C语言写友好函数 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="写函数，以两个正整数为参数，如果该两数是友好的，返回t，否则返回f。如果这两个每个的约数和（除了本身以外）等于对方整数，则称这对数是友好的。（例如：1184的约数和有：1+2+4+8+16+32+37+74+148+296+592=1210；1210的约数和有：1+2+5+10+11+22+55+110+121+242+605=1184。这对数是友好的。） #include &amp;lt;stdio.h">
+<meta name="keywords" content="C语言,友好,友好函数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C语言写友好函数">
+<meta property="og:url" content="http://yoursite.com/2019/05/05/filename/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="写函数，以两个正整数为参数，如果该两数是友好的，返回t，否则返回f。如果这两个每个的约数和（除了本身以外）等于对方整数，则称这对数是友好的。（例如：1184的约数和有：1+2+4+8+16+32+37+74+148+296+592=1210；1210的约数和有：1+2+5+10+11+22+55+110+121+242+605=1184。这对数是友好的。） #include &amp;lt;stdio.h">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-05-05T10:00:50.841Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="C语言写友好函数">
+<meta name="twitter:description" content="写函数，以两个正整数为参数，如果该两数是友好的，返回t，否则返回f。如果这两个每个的约数和（除了本身以外）等于对方整数，则称这对数是友好的。（例如：1184的约数和有：1+2+4+8+16+32+37+74+148+296+592=1210；1210的约数和有：1+2+5+10+11+22+55+110+121+242+605=1184。这对数是友好的。） #include &amp;lt;stdio.h">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,40 +65,45 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/05/05/filename/" class="archive-article-date">
-  <time datetime="2019-05-05T10:01:37.886Z" itemprop="datePublished">May 5</time>
+        <section id="main"><article id="post-filename" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/05/filename/" class="article-date">
+  <time datetime="2019-05-05T10:01:37.886Z" itemprop="datePublished">2019-05-05</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/05/filename/">C语言写友好函数</a>
+    <h1 class="article-title" itemprop="name">
+      C语言写友好函数
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>写函数，以两个正整数为参数，如果该两数是友好的，返回t，否则返回f。如果这两个每个的约数和（除了本身以外）等于对方整数，则称这对数是友好的。（例如：1184的约数和有：1+2+4+8+16+32+37+74+148+296+592=1210；1210的约数和有：1+2+5+10+11+22+55+110+121+242+605=1184。这对数是友好的。）</p>
+<p>#include &lt;stdio.h&gt;<br>int facsum(int n)<br>{<br>    int x=0;<br>    for(int i=1;i&lt;n;i++)<br>    if (n%i==0)<br>        x+=i;<br>    return x;<br>}<br>int main()<br>{<br>   int m,n;<br>   printf(“请输入两个整数:\n”);<br>   scanf(“%d %d”,&amp;m,&amp;n);<br>   if (facsum(n)==m&amp;&amp;facsum(m)==n)<br>    {<br>        printf(“%d和%d是友元\n”,m,n);<br>    }<br>    else<br>    {<br>        printf(“%d和%d不是友元\n”,m,n);<br>    }<br>        return 0;<br>}</p>
 
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/05/filename/" data-id="cjvarssm100000sgltlwxevf9" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C语言-友好-友好函数/">C语言,友好,友好函数</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+  
+</article>
 
 </section>
         
