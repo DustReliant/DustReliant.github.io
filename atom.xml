@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-06-08T10:38:36.899Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C语言写友好函数</title>
+    <link href="http://yoursite.com/2019/05/16/filename/"/>
+    <id>http://yoursite.com/2019/05/16/filename/</id>
+    <published>2019-05-16T15:38:44.530Z</published>
+    <updated>2019-06-08T10:38:36.899Z</updated>
+    
+    <content type="html"><![CDATA[<p>写函数，以两个正整数为参数，如果该两数是友好的，返回t，否则返回f。如果这两个每个的约数和（除了本身以外）等于对方整数，则称这对数是友好的。（例如：1184的约数和有：1+2+4+8+16+32+37+74+148+296+592=1210；1210的约数和有：1+2+5+10+11+22+55+110+121+242+605=1184。这对数是友好的。）</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int facsum(int n)</span><br><span class="line">&#123;</span><br><span class="line">    int x=0;</span><br><span class="line">    for(int i=1;i&lt;n;i++)</span><br><span class="line">    if (n%i==0)</span><br><span class="line">        x+=i;</span><br><span class="line">    return x;</span><br><span class="line">&#125;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">   int m,n;</span><br><span class="line">   printf(&quot;请输入两个整数:\n&quot;);</span><br><span class="line">   scanf(&quot;%d %d&quot;,&amp;m,&amp;n);</span><br><span class="line">   if (facsum(n)==m&amp;&amp;facsum(m)==n)</span><br><span class="line">    &#123;</span><br><span class="line">        printf(&quot;%d和%d是友元\n&quot;,m,n);</span><br><span class="line">&#125;</span><br><span class="line">    else</span><br><span class="line">    &#123;</span><br><span class="line">        printf(&quot;%d和%d不是友元\n&quot;,m,n); </span><br><span class="line">    &#125;</span><br><span class="line">        return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;写函数，以两个正整数为参数，如果该两数是友好的，返回t，否则返回f。如果这两个每个的约数和（除了本身以外）等于对方整数，则称这对数是友好的。（例如：1184的约数和有：1+2+4+8+16+32+37+74+148+296+592=1210；1210的约数和有：1+2+5+
+      
+    
+    </summary>
+    
+    
+      <category term="C语言,友好,友好函数" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80-%E5%8F%8B%E5%A5%BD-%E5%8F%8B%E5%A5%BD%E5%87%BD%E6%95%B0/"/>
+    
+  </entry>
+  
+</feed>
