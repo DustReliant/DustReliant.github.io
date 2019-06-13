@@ -2,15 +2,14 @@
 <html>
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>Tags - Hexo</title>
+<title>Tag: 类,友元 - Hexo</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="keywords" content="C语言,友好,友好函数,类,友元">
-<meta property="og:type" content="website">
+    <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+<meta property="og:url" content="http://yoursite.com/tags/类-友元/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
@@ -104,7 +103,7 @@
                 
                 <a class="navbar-item" href="/categories">分类</a>
                 
-                <a class="navbar-item is-active" href="/tags">标签</a>
+                <a class="navbar-item" href="/tags">标签</a>
                 
                 <a class="navbar-item" href="/about">关于</a>
                 
@@ -135,32 +134,59 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card widget">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
     <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                Tags
-            </h3>
-            <div class="field is-grouped is-grouped-multiline">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/tags">Tags</a></li>
+            <li class="is-active"><a href="#" aria-current="page">类,友元</a></li>
+        </ul>
+        </nav>
+    </div>
+</div>
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-06-13T12:36:13.145Z">2019-06-13</time>
                 
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/C语言-友好-友好函数/">
-                        <span class="tag">C语言,友好,友好函数</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
                 
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/类-友元/">
-                        <span class="tag">类,友元</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
+                <span class="level-item has-text-grey">
+                    
+                    
+                    a minute read (About 138 words)
+                </span>
+                
                 
             </div>
         </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/06/13/filename-C++/">C++</a>
+            
+        </h1>
+        <div class="content">
+            <p><strong>声明Book与Ruler两个类，二者都有weight属性，定义二者的一个友元函数totalWeight（），计算二者的重量和。</strong><br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">class Ruler;</span><br><span class="line">class Book</span><br><span class="line">&#123;</span><br><span class="line">	private:</span><br><span class="line">		int weight1;</span><br><span class="line">	public:</span><br><span class="line">		void init();</span><br><span class="line">		friend void disp(Book &amp;b,Ruler &amp;r);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">void Book::init()</span><br><span class="line">&#123;</span><br><span class="line">	cout&lt;&lt;&quot;请输入书的重量：&quot;&lt;&lt;endl;</span><br><span class="line">	cin&gt;&gt;weight1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Ruler</span><br><span class="line">&#123;</span><br><span class="line">	private:</span><br><span class="line">		int weight2;</span><br><span class="line">	public:</span><br><span class="line">		void init();</span><br><span class="line">		friend void disp(Book &amp;b,Ruler &amp;r);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">void Ruler::init()</span><br><span class="line">&#123;</span><br><span class="line">	cout&lt;&lt;&quot;请输入尺子的重量：&quot;&lt;&lt;endl;</span><br><span class="line">	cin&gt;&gt;weight2;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void disp(Book &amp;b,Ruler &amp;r)</span><br><span class="line">&#123;</span><br><span class="line">	cout&lt;&lt;&quot;二者的重量和为：&quot;&lt;&lt;b.weight1+r.weight2&lt;&lt;endl; </span><br><span class="line"> &#125; </span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	Book book;</span><br><span class="line">	Ruler ruler;</span><br><span class="line">	book.init();</span><br><span class="line">	ruler.init();</span><br><span class="line">	disp(book,ruler);</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+        </div>
+        
+        
+        
     </div>
-</div></div>
+</div>
+
+
+
+
+
+
+
+
+</div>
                 
 
 
