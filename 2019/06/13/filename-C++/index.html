@@ -1,79 +1,182 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<script src="/js/src/click.js"></script>
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="UTF-8">
+
+    
+
+    
+
+    <title>C++ | 依尘</title>
+    <meta name="author" content="John Doe">
+    <meta name="version" content="1.0.0">
+    <meta name="keywords" content="依尘">
+    <meta name="description" content="声明Book与Ruler两个类，二者都有weight属性，定义二者的一个友元函数totalWeight（），计算二者的重量和。1234567891011121314151617181920212223242526272829303132333435363738394041424344454647#include&amp;lt;iostream&amp;gt;using namespace std;class Ruler;class Book&amp;#123;	private:		int weight1;		...">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+
+    
+    
+    <link rel="icon" href="/images/gen.svg">
+    
+
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
-<script>
-    ! function() {
-        function n(n, e, t) {
-            return n.getAttribute(e) || t
-        }
- 
-        function e(n) {
-            return document.getElementsByTagName(n)
-        }
- 
-        function t() {
-            var t = e("script"),
-                o = t.length,
-                i = t[o - 1];
-            return {
-                l: o,
-                z: n(i, "zIndex", -1),
-                o: n(i, "opacity", 1),
-                c: n(i, "color", "255,0,0"),//控制线条的颜色的地方
-                n: n(i, "count", 180)
-            }
-        }
- 
-        function o() {
-            a = m.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth, c = m.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
-        }
- 
-        function i() {
-            r.clearRect(0, 0, a, c);
-            var n, e, t, o, m, l;
-            s.forEach(function(i, x) {
-                for(i.x += i.xa, i.y += i.ya, i.xa *= i.x > a || i.x < 0 ? -1 : 1, i.ya *= i.y > c || i.y < 0 ? -1 : 1, r.fillRect(i.x - .5, i.y - .5, 1, 1), e = x + 1; e < u.length; e++) n = u[e], null !== n.x && null !== n.y && (o = i.x - n.x, m = i.y - n.y, l = o * o + m * m, l < n.max && (n === y && l >= n.max / 2 && (i.x -= .03 * o, i.y -= .03 * m), t = (n.max - l) / n.max, r.beginPath(), r.lineWidth = t / 2, r.strokeStyle = "rgba(" + d.c + "," + (t + .2) + ")", r.moveTo(i.x, i.y), r.lineTo(n.x, n.y), r.stroke()))
-            }), x(i)
-        }
-        var a, c, u, m = document.createElement("canvas"),
-            d = t(),
-            l = "c_n" + d.l,
-            r = m.getContext("2d"),
-            x = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(n) {
-                window.setTimeout(n, 1e3 / 45)
-            },
-            w = Math.random,
-            y = {
-                x: null,
-                y: null,
-                max: 2e4
-            };
-        m.id = l, m.style.cssText = "position:fixed;top:0;left:0;z-index:" + d.z + ";opacity:" + d.o, e("body")[0].appendChild(m), o(), window.onresize = o, window.onmousemove = function(n) {
-            n = n || window.event, y.x = n.clientX, y.y = n.clientY
-        }, window.onmouseout = function() {
-            y.x = null, y.y = null
+
+    <main class="app">
+        
+        <div id="content" class="content"><div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-06-13T12:36:13.145Z">2019-06-13</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    1 分钟 读完 (大约 139 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                C++
+            
+        </h1>
+        <div class="content">
+            <p><strong>声明Book与Ruler两个类，二者都有weight属性，定义二者的一个友元函数totalWeight（），计算二者的重量和。</strong></p>
+<a id="more"></a>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">class Ruler;</span><br><span class="line">class Book</span><br><span class="line">&#123;</span><br><span class="line">	private:</span><br><span class="line">		int weight1;</span><br><span class="line">		friend void totalWeight(Book &amp;b,Ruler &amp;r);</span><br><span class="line">	public:</span><br><span class="line">		void init();</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">void Book::init()</span><br><span class="line">&#123;</span><br><span class="line">	cout&lt;&lt;&quot;请输入书的重量：&quot;&lt;&lt;endl;</span><br><span class="line">	cin&gt;&gt;weight1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Ruler</span><br><span class="line">&#123;</span><br><span class="line">	private:</span><br><span class="line">		int weight2;</span><br><span class="line">		friend void totalWeight(Book &amp;b,Ruler &amp;r);</span><br><span class="line">	public:</span><br><span class="line">		void init();</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">void Ruler::init()</span><br><span class="line">&#123;</span><br><span class="line">	cout&lt;&lt;&quot;请输入尺子的重量：&quot;&lt;&lt;endl;</span><br><span class="line">	cin&gt;&gt;weight2;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void totalWeight(Book &amp;b,Ruler &amp;r)</span><br><span class="line">&#123;</span><br><span class="line">	cout&lt;&lt;&quot;二者的重量和为：&quot;&lt;&lt;b.weight1+r.weight2&lt;&lt;endl; </span><br><span class="line"> &#125; </span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	Book book;</span><br><span class="line">	Ruler ruler;</span><br><span class="line">	book.init();</span><br><span class="line">	ruler.init();</span><br><span class="line">	totalWeight(book,ruler);</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/类-友元/">类,友元</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
+            
+                
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>支付宝</span>
+    <div class="qrcode"><img src="/images/zhifubao.png" alt="支付宝"></div>
+</a>
+
+                
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>微信</span>
+    <div class="qrcode"><img src="/images/weixin.png" alt="微信"></div>
+</a>
+
+                
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/10/09/认识HTML/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Html 初学笔记</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/05/16/filename/">
+                <span class="level-item">C语言写友好函数</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+        
+    </main>
+
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var nodes = {
+            nav: $('#nav'),
+            aside: $('#aside'),
+            asideInner: $('#aside-inner'),
+            navInner: $('#nav-inner')
         };
-        for(var s = [], f = 0; d.n > f; f++) {
-            var h = w() * a,
-                g = w() * c,
-                v = 2 * w() - 1,
-                p = 2 * w() - 1;
-            s.push({
-                x: h,
-                y: g,
-                xa: v,
-                ya: p,
-                max: 6e3
-            })
+
+        var doing = false;
+        nodes.asideInner.on('webkitAnimationEnd mozAnimationEnd oAnimationEnd oanimationend animationend', function() {
+            if (nodes.aside.hasClass('mobile-open')) {
+                nodes.aside.removeClass('mobile-open');
+            } else {
+                nodes.aside.removeClass('mobile-close panel-show');
+            }
+            doing = false;
+        });
+        $('#open-panel, #aside-mask').on('click', function() {
+            if (doing) {
+                return;
+            }
+            
+            if (nodes.aside.hasClass('panel-show')) {
+                nodes.aside.addClass('mobile-close');
+            } else {
+                nodes.aside.addClass('mobile-open panel-show');
+            }
+        });
+        $('#open-menus').on('click', function() {
+            nodes.navInner.slideToggle();
+        });
+
+        if (window.innerWidth <= 960) {
+            setTimeout(function() {
+                nodes.navInner.slideUp();
+            }, 3000);
         }
-        u = s.concat([y]), setTimeout(function() {
-            i()
-        }, 100)
-    }();
-</script>
+    });
+    </script>
+    
+        <script type="text/javascript" src="/js/scrollspy.min.js"></script>
+        <script type="text/javascript">
+        $(document.body).scrollspy({target: '#aside-inner'});
+        </script>
+    
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
