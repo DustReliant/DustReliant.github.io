@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+
+    
+
+    
+
+    <title>Html 初学笔记 | 依尘</title>
+    <meta name="author" content="John Doe" />
+    <meta name="keywords" content="依尘" />
+    <meta name="description" content="认识Html 超文本编辑语言（Hyper Text Markup Language）是Internet上用来编写网页的主要语言。html是一种描述性标记语言，用来描述页面内容的显示方式；以HTML语言为主编写的HTML是一种纯文本文件，以 .html或.htm为后缀。【语法】&amp;lt;标签&amp;gt;        内容&amp;lt;/标签&amp;gt;其中：标签通常都是成对出现，有开始的&amp;lt;标签&amp;gt;，有对应的结束的&amp;lt;/标签&amp;gt;。内容是一些纯文本文字或标签。HTML元素指..." />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+
+    
+    <link rel="alternate" href="/atom.xml" title="依尘" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/images/favicon.ico">
+    
+
+    <style type="text/css">
+    @font-face {
+        font-family: 'icomoon';
+        src: url("/fonts/icomoon.eot?q628ml");
+        src: url("/fonts/icomoon.eot?q628ml#iefix") format('embedded-opentype'),
+             url("/fonts/icomoon.ttf?q628ml") format('truetype'),
+             url("/fonts/icomoon.woff?q628ml") format('woff'),
+             url("/fonts/icomoon.svg?q628ml#icomoon") format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    </style>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!--[if lt IE 9]>
+    <style type="text/css">
+    .nav-inner {top:0;}
+    .author-meta {position:static;top:0;}
+    .search-form {height:36px;}
+    </style>
+    <script type="text/javascript" src="https://unpkg.com/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <main class="app">
+        <header id="header" class="header clearfix">
+    <div id="nav" class="nav">
+    <div class="nav-mobile">
+        <button id="open-panel" class="open-panel nav-mobile-item"><i class="icon-documents"></i></button>
+        <h1 class="nav-mobile-title nav-mobile-item">依尘</h1>
+        <button id="open-menus" class="open-panel nav-mobile-item"><i class="icon-library"></i></button>
+    </div>
+
+    <nav id="nav-inner" class="nav-inner">
+        
+            <a class="nav-item" href="/">
+                <span class="nav-text">首页</span>
+            </a>
+        
+            <a class="nav-item" href="/categories/front-end">
+                <span class="nav-text">前端</span>
+            </a>
+        
+            <a class="nav-item" href="/categories/back-end">
+                <span class="nav-text">后端</span>
+            </a>
+        
+            <a class="nav-item" href="/tags">
+                <span class="nav-text">标签</span>
+            </a>
+        
+            <a class="nav-item" href="/archives">
+                <span class="nav-text">归档</span>
+            </a>
+        
+            <a class="nav-item" href="/atom.xml">
+                <span class="nav-text">订阅</span>
+            </a>
+        
+            <a class="nav-item" href="/about">
+                <span class="nav-text">关于</span>
+            </a>
+        
+    </nav>
+</div>
+
+    <aside id="aside" class="aside">
+    <div id="aside-mask" class="aside-mask"></div>
+    <div id="aside-inner" class="aside-inner">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit"><i class="icon-search-stroke"></i></button><input type="hidden" name="sitesearch" value="http://www.yichen.online"></form>
+
+        
+        
+        
+        
+
+        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#认识Html"><span class="toc-number">1.</span> <span class="toc-text">认识Html</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#【语法】"><span class="toc-number">1.0.1.</span> <span class="toc-text">【语法】</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#【title元素】"><span class="toc-number">1.0.2.</span> <span class="toc-text">【title元素】</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML文档具体结构："><span class="toc-number">1.0.3.</span> <span class="toc-text">HTML文档具体结构：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#【实例代码】"><span class="toc-number">1.0.4.</span> <span class="toc-text">【实例代码】</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#【实例效果】"><span class="toc-number">1.0.5.</span> <span class="toc-text">【实例效果】</span></a></li></ol></li></ol>
+        
+    </div>
+</aside>
+
+</header>
+
+        <div id="content" class="content">
+            <div id="wrapper" class="wrapper" style="max-width: 800px">
+                <article class="article" itemscope itemprop="blogPost">
+    
+    <header class="article-header">
+        
+        <h1 itemprop="name">
+            Html 初学笔记
+        </h1>
+        
+        <div class="article-meta clearfix">
+            <a class="article-date" href="http://www.yichen.online/2019/10/09/认识HTML/index.html">
+    
+    <i class="icon-calendar"></i>
+    
+    <time datetime="2019-10-09T14:05:05.454Z" itemprop="datePublished">2019-10-09</time>
+</a>
+
+            
+<div class="article-tag-list">
+    <i class="icon-tag"></i>
+    <a class="article-tag-link" href="/tags/Html/">Html</a>
+</div>
+
+
+        </div>
+    </header>
+    
+    <section class="article-body markdown-body">
+        
+        <h1 id="认识Html"><a href="#认识Html" class="headerlink" title="认识Html"></a>认识Html</h1><p> <strong>超文本编辑语言（Hyper Text Markup Language）</strong>是Internet上用来编写网页的主要语言。html是一种描述性标记语言，用来描述页面内容的显示方式；以HTML语言为主编写的HTML是一种纯文本文件，以 .html或.htm为后缀。</p>
+<a id="more"></a>
+<h3 id="【语法】"><a href="#【语法】" class="headerlink" title="【语法】"></a>【语法】</h3><pre><code>&lt;标签&gt;
+        内容
+&lt;/标签&gt;
+</code></pre><p>其中：</p>
+<ul>
+<li>标签通常都是成对出现，有开始的&lt;标签&gt;，有对应的结束的&lt;/标签&gt;。</li>
+<li>内容是一些纯文本文字或标签。</li>
+<li>HTML元素指的是从开始标签到结束标签的所有代码。</li>
+</ul>
+<h3 id="【title元素】"><a href="#【title元素】" class="headerlink" title="【title元素】"></a>【title元素】</h3><pre><code>&lt;title&gt;
+        一个简单的页面
+&lt;/title&gt;
+</code></pre><h3 id="HTML文档具体结构："><a href="#HTML文档具体结构：" class="headerlink" title="HTML文档具体结构："></a>HTML文档具体结构：</h3><p><img src="https://i.loli.net/2019/10/09/nwhKC2R6D7W8aLj.png" alt="选区_010.png"></p>
+<p>   在HTML文件的第一行中，使用&lt;!DOCTYPE&gt;标签来<strong>指定文档类型</strong>定义，<strong>&lt;!DOCTYPE&gt;标签需放在所有文档标签之前</strong>，用于说明文档使用的HTML或XHTML的特定版本，并告诉浏览器后续内容应依照什么方式来进行解析。</p>
+<p>HTML文档结构是由<html><head><meta name="generator" content="Hexo 3.8.0"></head><body>三大元素组成。</body></html></p>
+<ul>
+<li>html元素：HTML文档是以<html>标签开始，以</html>标签结束。文档的所有内容都需要放在这两个标签之间。</li>
+<li>head元素：<strong>页面头部信息</strong>用于像浏览器提供整个页面的基本信息，但不包括页面的主体内容。<strong>头部信息主要包括页面的标题、元信息、CSS样式、JavaScript脚本等元素</strong>。</li>
+<li>body元素：<strong>网页的正文，用户在浏览器主体窗口中看到的信息</strong>，包括图片、表格、段落、视频等内容，且须位于<body>标签之内。<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></li>
+</ul>
+<h3 id="【实例代码】"><a href="#【实例代码】" class="headerlink" title="【实例代码】"></a>【实例代码】</h3><pre><code>&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+          &lt;head&gt;
+             &lt;title&gt;
+                  第一个网页
+            &lt;/title&gt;
+         &lt;/head&gt;
+            &lt;body&gt;
+                    hello world !
+            &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre><h3 id="【实例效果】"><a href="#【实例效果】" class="headerlink" title="【实例效果】"></a>【实例效果】</h3><p><img src="https://i.loli.net/2019/10/09/mfrcX1DbetdP4Ll.png" alt="选区_011.png"></p>
+
+        
+    </section>
+</article>
+
+
+
+<a id="pagenext" href="/2019/06/13/filename-C++/" class="article-next" title="C++"><i class="icon-arrow-right"></i></a>
+
+
+
+
+<div class="comments">
+    <div id="comments"></div>
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+    new Gitalk({
+        clientID: "7fbe80427f54741e289f",
+        clientSecret: "f34ed5fd92e54c9000bd37ba951948cb939deff5",
+        repo: "sanonz.github.io",
+        owner: "sanonz",
+        admin: ["sanonz"],
+        id: "2019/10/09/认识HTML",
+        distractionFreeMode: true,
+        title: "Html 初学笔记",
+        body: "http://www.yichen.online/2019/10/09/认识HTML/",
+        labels: ["Html"]
+    }).render('comments');
+    </script>
+</div>
+
+
+            </div>
+        </div>
+        <footer class="footer">
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, Theme by <a href="https://github.com/sanonz/hexo-theme-concise" target="_blank">Concise</a>
+
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?e4027971a230b210f4671f485b33846a";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    
+</footer>
+
+    </main>
+
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var nodes = {
+            nav: $('#nav'),
+            aside: $('#aside'),
+            asideInner: $('#aside-inner'),
+            navInner: $('#nav-inner')
+        };
+
+        var doing = false;
+        nodes.asideInner.on('webkitAnimationEnd mozAnimationEnd oAnimationEnd oanimationend animationend', function() {
+            if (nodes.aside.hasClass('mobile-open')) {
+                nodes.aside.removeClass('mobile-open');
+            } else {
+                nodes.aside.removeClass('mobile-close panel-show');
+            }
+            doing = false;
+        });
+        $('#open-panel, #aside-mask').on('click', function() {
+            if (doing) {
+                return;
+            }
+
+            if (nodes.aside.hasClass('panel-show')) {
+                nodes.aside.addClass('mobile-close');
+            } else {
+                nodes.aside.addClass('mobile-open panel-show');
+            }
+        });
+        $('#open-menus').on('click', function() {
+            nodes.navInner.slideToggle();
+        });
+
+        if (window.innerWidth <= 960) {
+            setTimeout(function() {
+                nodes.navInner.slideUp();
+            }, 3000);
+        }
+    });
+    </script>
+    
+        <script src="/js/scrollspy.min.js"></script>
+        <script type="text/javascript">
+        $(document.body).scrollspy({target: '#aside-inner'});
+
+        $(window).on('resize', function() {
+            var hw = $('#header').width();
+            var ww = $('#wrapper').width();
+            var space = ($(this).width() - hw - ww) / 2 / 2;
+
+            var pageprev = $('#pageprev');
+            var pagenext = $('#pagenext');
+            var avg = (pageprev.width() + pagenext.width()) / 2
+
+            if(space > avg) {
+                var len = space - avg / 2;
+                var styles = {position: 'fixed', top: '50%', marginTop: - (pageprev.width() + pagenext.width()) / 4}
+                pageprev.css($.extend({left: hw + len}, styles));
+                pagenext.css($.extend({right: len}, styles));
+            } else {
+                pageprev.removeAttr('style');
+                pagenext.removeAttr('style');
+            }
+        }).trigger('resize');
+        </script>
+    
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
