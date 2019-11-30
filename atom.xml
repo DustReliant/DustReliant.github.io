@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>依尘</title>
   
-  
+  <subtitle>Ting 花落的声音</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.yichen.online/"/>
@@ -10,7 +10,7 @@
   <id>http://www.yichen.online/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>依尘</name>
     
   </author>
   
