@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.yichen.online/about/index.html</loc>
+    
+    <lastmod>2019-12-14T15:20:47.820Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.yichen.online/2019/12/14/%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</loc>
     
     <lastmod>2019-12-14T13:42:57.882Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>http://www.yichen.online/2019/06/13/filename-C++/</loc>
     
     <lastmod>2019-12-01T15:17:04.346Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.yichen.online/about/index.html</loc>
-    
-    <lastmod>2019-11-30T10:27:30.441Z</lastmod>
     
   </url>
   
