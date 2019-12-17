@@ -1,0 +1,102 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="依尘de个人展示"><meta name="keywords" content="依尘"><link rel="stylesheet" type="text/css" href="//fonts.loli.net/css?family=Source+Code+Pro"><link rel="stylesheet" type="text/css" href="/css/style.css?v=2.0.2"><link rel="stylesheet" type="text/css" href="/css/highlight.css?v=2.0.2"><link rel="Shortcut Icon" href="/favicon.ico"><link rel="bookmark" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><title>Html 初学笔记 | 依尘</title></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Html 初学笔记</h1><a id="logo" href="/.">依尘</a><p class="description">Ting 花落的声音</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div><div id="search-form"><div id="result-mask" class="hide"></div><label><input id="search-key" type="text" autocomplete="off" placeholder="搜索"></label><div id="result-wrap" class="hide"><div id="search-result"></div></div><div class="hide"><template id="search-tpl"><div class="item"><a href="/{path}" title="{title}"><div class="title">{title}</div><div class="time">{date}</div><div class="tags">{tags}</div></a></div></template></div></div></div><div id="layout" class="layout-g"><div class="layout-l"><div class="content_container"><div class="post"><h1 class="post-title">Html 初学笔记</h1><div class="post-meta"><a href="/2019/12/05/认识HTML/#comments" class="comment-count"><i id="changyan_count_unit" data-xid="2019/12/05/认识HTML/"></i>留言,<i id="changyan_parti_unit" data-xid="2019/12/05/认识HTML/"></i>参与</a><p><span class="date">= page.date.format(theme.date_formats.post)</span><span><i id="busuanzi_container_page_pv"><i id="busuanzi_value_page_pv"></i><i>点击</i></i></span></p></div><div class="post-content"><h1 id="认识Html"><a href="#认识Html" class="headerlink" title="认识Html"></a>认识Html</h1><p> <strong>超文本编辑语言（Hyper Text Markup Language）</strong>是Internet上用来编写网页的主要语言。html是一种描述性标记语言，用来描述页面内容的显示方式；以HTML语言为主编写的HTML是一种纯文本文件，以 .html或.htm为后缀。</p>
+<a id="more"></a>
+<h3 id="【语法】"><a href="#【语法】" class="headerlink" title="【语法】"></a>【语法】</h3><pre><code>&lt;标签&gt;
+        内容
+&lt;/标签&gt;</code></pre><p>其中：</p>
+<ul>
+<li>标签通常都是成对出现，有开始的&lt;标签&gt;，有对应的结束的&lt;/标签&gt;。</li>
+<li>内容是一些纯文本文字或标签。</li>
+<li>HTML元素指的是从开始标签到结束标签的所有代码。</li>
+</ul>
+<h3 id="【title元素】"><a href="#【title元素】" class="headerlink" title="【title元素】"></a>【title元素】</h3><pre><code>&lt;title&gt;
+        一个简单的页面
+&lt;/title&gt;</code></pre><h3 id="HTML文档具体结构："><a href="#HTML文档具体结构：" class="headerlink" title="HTML文档具体结构："></a>HTML文档具体结构：</h3><p><img src="https://i.loli.net/2019/10/09/nwhKC2R6D7W8aLj.png" alt="选区_010.png"></p>
+<p>   在HTML文件的第一行中，使用&lt;!DOCTYPE&gt;标签来<strong>指定文档类型</strong>定义，<strong>&lt;!DOCTYPE&gt;标签需放在所有文档标签之前</strong>，用于说明文档使用的HTML或XHTML的特定版本，并告诉浏览器后续内容应依照什么方式来进行解析。</p>
+<p>HTML文档结构是由<html><head><meta name="generator" content="Hexo 3.9.0"></head><body>三大元素组成。</body></html></p>
+<ul>
+<li>html元素：HTML文档是以<html>标签开始，以</html>标签结束。文档的所有内容都需要放在这两个标签之间。</li>
+<li>head元素：<strong>页面头部信息</strong>用于像浏览器提供整个页面的基本信息，但不包括页面的主体内容。<strong>头部信息主要包括页面的标题、元信息、CSS样式、JavaScript脚本等元素</strong>。</li>
+<li>body元素：<strong>网页的正文，用户在浏览器主体窗口中看到的信息</strong>，包括图片、表格、段落、视频等内容，且须位于<body>标签之内。</body></li>
+</ul>
+<h3 id="【实例代码】"><a href="#【实例代码】" class="headerlink" title="【实例代码】"></a>【实例代码】</h3><pre><code>&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+          &lt;head&gt;
+             &lt;title&gt;
+                  第一个网页
+            &lt;/title&gt;
+         &lt;/head&gt;
+            &lt;body&gt;
+                    hello world !
+            &lt;/body&gt;
+    &lt;/html&gt;</code></pre><h3 id="【实例效果】"><a href="#【实例效果】" class="headerlink" title="【实例效果】"></a>【实例效果】</h3><p><img src="https://i.loli.net/2019/10/09/mfrcX1DbetdP4Ll.png" alt="选区_011.png"></p>
+</div><div class="post-copyright"><blockquote><p>原文作者: 依尘</p><p>原文链接: <a href="http://www.yichen.online/2019/12/05/认识HTML/">http://www.yichen.online/2019/12/05/认识HTML/</a></p><p>版权声明: 转载请注明出处(必须保留作者署名及链接)</p></blockquote></div><div class="tags"><a href="/tags/Html/">Html</a></div><div class="post-share"></div><div class="post-nav"><a href="/2019/12/14/通讯录管理系统/" class="pre">学生通讯录管理系统</a><a href="/2019/06/13/filename-C++/" class="next">C++</a></div><div id="comments"><div id="SOHUCS" sid="2019/12/05/认识HTML/"></div></div></div></div></div><div class="layout-r"><div id="sidebar"><div class="search-pla"></div><div id="toc" class="widget"><div class="widget-title"><i class="fa fa-fei">文章目录</i></div><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#认识Html"><span class="toc-number">1.</span> <span class="toc-text">认识Html</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#【语法】"><span class="toc-number">1.0.1.</span> <span class="toc-text">【语法】</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#【title元素】"><span class="toc-number">1.0.2.</span> <span class="toc-text">【title元素】</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML文档具体结构："><span class="toc-number">1.0.3.</span> <span class="toc-text">HTML文档具体结构：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#【实例代码】"><span class="toc-number">1.0.4.</span> <span class="toc-text">【实例代码】</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#【实例效果】"><span class="toc-number">1.0.5.</span> <span class="toc-text">【实例效果】</span></a></li></ol></li></ol></div><div class="widget"><div class="widget-title"><i class="fa fa-xie"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/12/14/通讯录管理系统/">学生通讯录管理系统</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/12/05/认识HTML/">Html 初学笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/06/13/filename-C++/">C++</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/16/filename/">C语言写友好函数</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-biao"> 标签</i></div><div class="tagcloud"><a href="/tags/类-友元/" style="font-size: 15px;">类,友元</a> <a href="/tags/C语言-友好-友好函数/" style="font-size: 15px;">C语言,友好,友好函数</a> <a href="/tags/Html/" style="font-size: 15px;">Html</a> <a href="/tags/C语言/" style="font-size: 15px;">C语言</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-archive"> 归档</i></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">十二月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a></li></ul></div><script type="text/javascript" src="//rf.revolvermaps.com/0/0/5.js?i=54sarfg3bk5&amp;m=0&amp;c=ff0000&amp;cr1=ffffff" async="async"></script></div></div></div><a id="totop" href="#top"></a><div id="footer"><div class="footer-info"><p><a href="/baidusitemap.xml">网站地图</a> |  <a href="/atom.xml">订阅本站</a> |  <a href="/about/">联系博主</a></p><p>本站总访问量：<i id="busuanzi_container_site_pv"><i id="busuanzi_value_site_pv"></i></i>次，本站总访客数:<i id="busuanzi_container_site_uv"><i id="busuanzi_value_site_uv"></i></i>人</p><p><span> Copyright &copy;<a href="/." rel="nofollow">依尘.</a></span><span> Theme by<a rel="nofollow" target="_blank" href="https://github.com/chaooo/hexo-theme-BlueLake"> BlueLake.</a></span><span> Count by<a href="http://busuanzi.ibruce.info/"> busuanzi.</a></span><span> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a></span></p></div></div></div><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?0e70f47a2090203629bef42292576402";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+  })();
+</script><script type="text/javascript" src="/js/search.json.js?v=2.0.2"></script><script type="text/javascript" src="/js/toctotop.js?v=2.0.2" async></script><script>window._config = { showScore: true };
+(function(){ 
+  var appid = 'cyuzdYEE7'; 
+  var conf = '9ecf2efd9a6cc8e839a5ce6d813d3a18'; 
+  var width = window.innerWidth || document.documentElement.clientWidth; 
+  var nodes =document.getElementsByTagName("head")[0]||document.head||document.documentElement;
+  if (/(Android|iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent) && width < 750) {  
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>');
+  }
+  else { 
+    var loadJs=function(d,a){
+      var b=document.createElement("script");b.setAttribute("type","text/javascript");
+      b.setAttribute("charset","UTF-8");
+      b.setAttribute("src",d);
+      if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}
+      nodes.appendChild(b)
+    };
+    loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); 
+  } 
+  var loadCss = function(cssString){  
+    var style=document.createElement("style");  
+    style.setAttribute("type", "text/css");  
+    if(style.styleSheet){// IE  
+        style.styleSheet.cssText = cssString;  
+    } else {// w3c  
+        var cssText = document.createTextNode(cssString);  
+        style.appendChild(cssText);  
+    }
+    nodes.appendChild(style);
+  }
+  //- window.onload=function(){
+  //-   if(window.outerWidth<=775){
+  //-     loadCss('.module-hot-topic,.module-cmt-float-bar{display:none!important}#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w .wrap-action-w .cbox-prompt-w span.prompt-empty-w,#SOHUCS #SOHU_MAIN .module-cmt-float-bar .wrap-cont-w .cont-form-w .form-text-w span.text-null,#SOHUCS #SOHU_MAIN .module-cmt-float-bar .wrap-cont-w .cont-minwidth-w div.cont-comment-w a.comment-link-w,#SOHUCS #SOHU_MAIN .module-cmt-float-bar .wrap-cont-w .cont-minwidth-w div.cont-comment-w span.comment-text-w,#SOHUCS #SOHU_MAIN .module-cmt-footer .section-service-w div.service-wrap-w a:hover,#SOHUCS #SOHU_MAIN .module-cmt-header .section-cbox-w .block-head-w div.header-login,#SOHUCS #SOHU_MAIN .module-cmt-header .section-title-w .title-user-w .user-wrap-w span.wrap-name-w,#SOHUCS #SOHU_MAIN .module-cmt-list .action-click-gw span.click-disable-eg a em.icon-name-bg,#SOHUCS #SOHU_MAIN .module-cmt-list .block-title-gw ul li div.title-name-gw,#SOHUCS #SOHU_MAIN .module-cmt-list .cmt-list-type .cmt-list-number .comment-number span.cy-number,#SOHUCS #SOHU_MAIN .module-cmt-list .cmt-list-type .cmt-list-number span.comment-number,#SOHUCS #SOHU_MAIN .module-cmt-list .cmt-list-type .type-lists li.active,#SOHUCS #SOHU_MAIN .module-cmt-list .msg-wrap-gw .wrap-action-gw .action-click-gw span a:hover,#SOHUCS #SOHU_MAIN .module-cmt-list .picture-box-gw div.box-action-gw a:hover,#SOHUCS #SOHU_MAIN .module-cmt-list .wrap-action-gw .action-click-gw span a:hover em.icon-name-bg,#SOHUCS #SOHU_MAIN .module-cmt-list .wrap-user-gw span.user-name-gw a{color:#40759b!important}#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w .post-wrap-border-t div.post-wrap-border-t-r,#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w div.post-wrap-border-l,#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w div.post-wrap-border-r{display:none!important}#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w .post-wrap-border-t div.post-wrap-border-t-l{background:#FFF!important;top:-2px!important}#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w .wrap-action-w .action-function-w .uploading-wrapper-dw div.wrapper-image-dw,#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w div.post-wrap-main,#SOHUCS #SOHU_MAIN .module-cmt-float-bar .wrap-cont-w .cont-form-w div.form-text-w,#SOHUCS #SOHU_MAIN .module-cmt-header .section-cbox-w .block-head-w div.header-login,#SOHUCS #SOHU_MAIN .module-cmt-list .module-cmt-box .post-wrap-w div.post-wrap-main{border:1px solid #e6e6e6!important;border-radius:20px 20px 20px 20px;margin:0!important}#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w .wrap-action-w .action-issue-w .issue-btn-w a .btn-fw{width:130px!important;height:34px!important;line-height:33px!important;font-size:17px!important;background:#5483b1!important;border-radius:20px!important;color:#FFF!important;-webkit-box-shadow:0 -1px 4px #5483b1 inset;box-shadow:0 -1px 10px #5483b1 inset}#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w .wrap-action-w .action-issue-w .issue-btn-w a .btn-fw:before{content:"发表评论"}#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w .wrap-action-w .action-issue-w .issue-btn-w a:hover .btn-fw{color:#40759b!important;background:#FFF!important}#SOHUCS #SOHU_MAIN .module-cmt-list .cmt-list-type .type-lists li{background:none!important;border-bottom:1px solid #e6e6e6}#SOHUCS #SOHU_MAIN .module-cmt-list .cmt-list-type .type-lists li.active{border:1px solid #e6e6e6;border-radius:10px 10px 0 0;border-bottom:none}#SOHUCS #SOHU_MAIN .module-cmt-list .block-title-gw ul li .title-name-gw div.title-name-gw-tag{background:#5483b1!important;border-radius:3px}#SOHUCS #SOHU_MAIN .module-cmt-list .cmt-list-type div.cmt-list-border{background-color:#e6e6e6!important}#SOHUCS #SOHU_MAIN .module-cmt-notice ul.nt-list li.nt-item{border:1px solid #e6e6e6!important}#SOHUCS #SOHU_MAIN .module-cmt-notice ul.nt-list li.nt-item .nt-logo{text-align:center;line-height:40px;border-radius:50%!important;background:#e6e6e6!important}#SOHUCS #SOHU_MAIN .module-cmt-notice ul.nt-list li.nt-item .nt-logo:before{content:"畅";font-size:22px;color:#FFF}#SOHUCS #SOHU_MAIN .module-cmt-notice ul.nt-list li.nt-item a.nt-text,#SOHUCS #SOHU_MAIN .module-cmt-notice ul.nt-list li.nt-item a.nt-text i{color:#5483b1!important}#SOHUCS #SOHU_MAIN .module-cmt-header .section-title-w .title-user-w .user-wrap-w{background:#FFF!important}@media screen and (min-width:900px){#SOHUCS #SOHU_MAIN .module-mobile-cmt-list .list-wrapper-wap .list-container-wap .list-item-wap .list-content-wrapper-wap .cmt-list-image-container .cmt-list-image{max-width: 100%;}}');
+  //-   }
+  //- };
+})();
+function removeElement(_element){
+     var _parentElement = _element.parentNode;
+     if(_parentElement){
+            _parentElement.removeChild(_element);
+     }
+}
+var removeAD = document.createElement("div");
+removeAD.id = 'removeAD';
+var adInterval1 = setInterval(function() {
+  if(document.querySelector("#feedAv")){
+    document.querySelector("[node-type=cmt-list]").appendChild(removeAD);
+    document.querySelector("#removeAD").appendChild(document.querySelector("#feedAv"));
+    //- removeElement(document.querySelectorAll("#feedAv")[0]);
+    var feedAv = document.querySelector("#feedAv").children;
+    for( item of feedAv){
+      item.style.display = 'none'
+    }
+    document.querySelector("#removeAD").style.display="none"
+    clearInterval(adInterval1);
+  }
+},1000);
+var adInterval2 = setInterval(function() {
+  if(document.querySelector("#pop_ad")){
+    removeElement(document.querySelector("#pop_ad"));
+    clearInterval(adInterval2);
+  }
+}, 1000);</script><script src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":120,"height":300},"mobile":{"show":false},"meta":false,"pages":false,"posts":{"title":true,"date":true,"path":true,"text":true,"raw":false,"content":false,"slug":false,"updated":false,"comments":false,"link":false,"permalink":false,"excerpt":false,"categories":false,"tags":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html><!--动态线条背景-->
+<script type="text/javascript" color="255,26,79" opacity="0.7" zindex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
