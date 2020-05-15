@@ -2,9 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.yichen.online/friends/index.html</loc>
+    
+    <lastmod>2020-05-15T10:06:10.831Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.yichen.online/contact/index.html</loc>
+    
+    <lastmod>2020-05-15T10:05:27.669Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.yichen.online/about/index.html</loc>
+    
+    <lastmod>2020-05-15T10:02:03.700Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.yichen.online/categories/index.html</loc>
+    
+    <lastmod>2020-05-15T10:00:36.143Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.yichen.online/tags/index.html</loc>
+    
+    <lastmod>2020-05-15T09:59:33.616Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.yichen.online/playlist/index.html</loc>
+    
+    <lastmod>2020-05-15T08:51:51.476Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.yichen.online/2019/12/05/%E8%AE%A4%E8%AF%86HTML/</loc>
     
-    <lastmod>2020-05-15T05:23:32.096Z</lastmod>
+    <lastmod>2020-05-15T08:45:59.771Z</lastmod>
     
   </url>
   
@@ -12,13 +54,6 @@
     <loc>http://www.yichen.online/data/musics.json</loc>
     
     <lastmod>2020-05-15T04:56:44.533Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.yichen.online/playlist/index.html</loc>
-    
-    <lastmod>2020-05-15T03:08:25.746Z</lastmod>
     
   </url>
   
@@ -37,34 +72,6 @@
   </url>
   
   <url>
-    <loc>http://www.yichen.online/contact/index.html</loc>
-    
-    <lastmod>2020-05-15T01:35:14.081Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.yichen.online/friends/index.html</loc>
-    
-    <lastmod>2020-05-15T01:34:45.097Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.yichen.online/tags/index.html</loc>
-    
-    <lastmod>2020-05-15T01:33:14.302Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.yichen.online/categories/index.html</loc>
-    
-    <lastmod>2020-05-15T01:31:30.391Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.yichen.online/2019/12/14/%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</loc>
     
     <lastmod>2019-12-22T14:49:36.727Z</lastmod>
@@ -75,13 +82,6 @@
     <loc>http://www.yichen.online/baidu_verify_dn86tgnuj7.html</loc>
     
     <lastmod>2019-12-18T15:10:48.262Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.yichen.online/about/index.html</loc>
-    
-    <lastmod>2019-12-14T15:20:47.820Z</lastmod>
     
   </url>
   
