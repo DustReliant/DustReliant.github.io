@@ -338,7 +338,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/5.jpg)');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/6.jpg)');
 </script>
 
 
@@ -553,6 +553,33 @@
         <div class="card">
 
             
+            <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '54c3b7d79c443e4d548d',
+        clientSecret: 'd443beeac37300c8ba1b2f35fad64c1533a529c7',
+        repo: '1619513467.github.io',
+        owner: '1619513467',
+        admin: 1619513467,
+        id: '2020-05-15T09-34-45',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+
+            
 
             
 
@@ -673,6 +700,10 @@
     </a>
 
 
+
+    <a href="https://weibo.com/3902969729/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo&amp;is_all=1" class="tooltipped" target="_blank" data-tooltip="关注我的微博: https://weibo.com/3902969729/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo&amp;is_all=1" data-position="top" data-delay="50">
+        <i class="fab fa-weibo"></i>
+    </a>
 
 
 
