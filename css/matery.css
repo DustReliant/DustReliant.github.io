@@ -262,7 +262,7 @@ mark {
 }
 
 .container .row {
-    margin-bottom: 0;
+    margin-bottom: -50px;
 }
 
 .bg-color {
