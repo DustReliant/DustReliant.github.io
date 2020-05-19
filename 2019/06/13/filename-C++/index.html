@@ -310,7 +310,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    166
+                    179
                 </div>
                 
 
@@ -335,53 +335,8 @@
                 <p><strong>声明Book与Ruler两个类，二者都有weight属性，定义二者的一个友元函数totalWeight（），计算二者的重量和。</strong></p>
 <a id="more"></a>
 
-<pre><code>#include&lt;iostream&gt;
-using namespace std;
-class Ruler;
-class Book
-{
-    private:
-        int weight1;
-        friend void totalWeight(Book &amp;b,Ruler &amp;r);
-    public:
-        void init();
-};
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">class Ruler;</span><br><span class="line">class Book</span><br><span class="line">&#123;</span><br><span class="line">	private:</span><br><span class="line">		int weight1;</span><br><span class="line">		friend void totalWeight(Book &amp;b,Ruler &amp;r);</span><br><span class="line">	public:</span><br><span class="line">		void init();</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">void Book::init()</span><br><span class="line">&#123;</span><br><span class="line">	cout&lt;&lt;&quot;请输入书的重量：&quot;&lt;&lt;endl;</span><br><span class="line">	cin&gt;&gt;weight1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Ruler</span><br><span class="line">&#123;</span><br><span class="line">	private:</span><br><span class="line">		int weight2;</span><br><span class="line">		friend void totalWeight(Book &amp;b,Ruler &amp;r);</span><br><span class="line">	public:</span><br><span class="line">		void init();</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">void Ruler::init()</span><br><span class="line">&#123;</span><br><span class="line">	cout&lt;&lt;&quot;请输入尺子的重量：&quot;&lt;&lt;endl;</span><br><span class="line">	cin&gt;&gt;weight2;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void totalWeight(Book &amp;b,Ruler &amp;r)</span><br><span class="line">&#123;</span><br><span class="line">	cout&lt;&lt;&quot;二者的重量和为：&quot;&lt;&lt;b.weight1+r.weight2&lt;&lt;endl; </span><br><span class="line"> &#125; </span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	Book book;</span><br><span class="line">	Ruler ruler;</span><br><span class="line">	book.init();</span><br><span class="line">	ruler.init();</span><br><span class="line">	totalWeight(book,ruler);</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-void Book::init()
-{
-    cout&lt;&lt;&quot;请输入书的重量：&quot;&lt;&lt;endl;
-    cin&gt;&gt;weight1;
-}
-
-class Ruler
-{
-    private:
-        int weight2;
-        friend void totalWeight(Book &amp;b,Ruler &amp;r);
-    public:
-        void init();
-};
-
-void Ruler::init()
-{
-    cout&lt;&lt;&quot;请输入尺子的重量：&quot;&lt;&lt;endl;
-    cin&gt;&gt;weight2;
-}
-
-void totalWeight(Book &amp;b,Ruler &amp;r)
-{
-    cout&lt;&lt;&quot;二者的重量和为：&quot;&lt;&lt;b.weight1+r.weight2&lt;&lt;endl; 
- } 
-
-int main()
-{
-    Book book;
-    Ruler ruler;
-    book.init();
-    ruler.init();
-    totalWeight(book,ruler);
-    return 0;
-}</code></pre>
             </div>
             <hr/>
 
@@ -1035,7 +990,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
     <span class="badge-subject">PV</span><span class="badge-value bg-brightgreen" id="busuanzi_value_site_pv"></span>
   </div>
   <div class="github-badge">
-    <span class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet">2.4k</span>
+    <span class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet">2.7k</span>
   </div>
 </div>
 </footer>
