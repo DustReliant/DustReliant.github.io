@@ -117,3 +117,11 @@
     width: 75%;
     color: fuchsia;
 }
+.ditu{
+    /* display: inline-block; */
+    position: relative;
+    float: right;
+    margin-top: -65px;
+    margin-right: 200px;
+    width: 200px;
+}
