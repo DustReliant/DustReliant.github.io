@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.yichen.online/"/>
-  <updated>2020-05-24T05:27:53.138Z</updated>
+  <updated>2020-05-16T07:35:41.318Z</updated>
   <id>http://www.yichen.online/</id>
   
   <author>
@@ -15,33 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Ubuntu安装VMware15.0教程之报错（含注册码）</title>
-    <link href="http://www.yichen.online/2020/05/24/Ubuntu%E5%AE%89%E8%A3%85VMware15.0%E6%95%99%E7%A8%8B/"/>
-    <id>http://www.yichen.online/2020/05/24/Ubuntu安装VMware15.0教程/</id>
-    <published>2020-05-24T05:20:37.715Z</published>
-    <updated>2020-05-24T05:27:53.138Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h1><p> 1.去VMware官网 下载<a href="https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html" target="_blank" rel="noopener">VMware Workstation</a><br><br> 地址：<a href="https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html" target="_blank" rel="noopener">https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html</a><br> <img src="https://i.loli.net/2020/05/24/lyOQanbe49roidK.png" alt="VMware.png"></p><h1 id="转到下载目录"><a href="#转到下载目录" class="headerlink" title="转到下载目录"></a>转到下载目录</h1><p>2.在你的下载目录，打开终端（Ctrl+Alt+t）输入以下命令</p><pre><code>    sudo chmod +x VMware-Workstation-Full-15.5.2-15785246.x86_64.bundle    ./VMware-Workstation-Full-15.5.2-15785246.x86_64.bundle</code></pre><p>注意：不要盲目复制代码，可能下载的版本不同。文件名不同，就需要输入不同的命令。</p><h1 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h1><p>3.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
-      
-    
-    </summary>
-    
-      <category term="技术" scheme="http://www.yichen.online/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="Ubuntu" scheme="http://www.yichen.online/tags/Ubuntu/"/>
-    
-      <category term="VMware" scheme="http://www.yichen.online/tags/VMware/"/>
-    
-  </entry>
   
   <entry>
     <title>学生通讯录管理系统</title>
