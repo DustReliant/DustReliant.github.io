@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.yichen.online/music/index.html</loc>
+    <loc>https://www.yichen.online/about/index.html</loc>
     
-    <lastmod>2020-05-31T02:49:46.258Z</lastmod>
+    <lastmod>2020-06-01T09:09:20.196Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://www.yichen.online/link/index.html</loc>
     
-    <lastmod>2020-05-26T14:46:57.865Z</lastmod>
+    <lastmod>2020-06-01T08:42:21.813Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yichen.online/2019/12/14/%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</loc>
+    
+    <lastmod>2020-06-01T02:09:01.602Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yichen.online/music/index.html</loc>
+    
+    <lastmod>2020-05-31T02:49:46.258Z</lastmod>
     
   </url>
   
@@ -40,20 +54,6 @@
     <loc>https://www.yichen.online/2019/05/16/filename/</loc>
     
     <lastmod>2020-05-26T13:37:50.013Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yichen.online/2019/12/14/%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</loc>
-    
-    <lastmod>2020-05-26T13:37:45.483Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yichen.online/about/index.html</loc>
-    
-    <lastmod>2020-05-26T13:19:19.059Z</lastmod>
     
   </url>
   
