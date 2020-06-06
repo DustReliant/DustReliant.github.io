@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.yichen.online/link/index.html</loc>
+    
+    <lastmod>2020-06-06T14:44:36.133Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.yichen.online/music/index.html</loc>
     
     <lastmod>2020-06-05T07:05:23.667Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>https://www.yichen.online/tags/index.html</loc>
     
     <lastmod>2020-06-03T07:26:35.264Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yichen.online/link/index.html</loc>
-    
-    <lastmod>2020-06-03T07:24:53.657Z</lastmod>
     
   </url>
   
