@@ -142,7 +142,7 @@ function commentCount(n){
   } catch (e) {
     return false
   }
-}</script><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var requestSetting = function (from,set) {
+}</script><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/gh/1619513467/cdn@master/js/Valine.min.js"></script><script>var requestSetting = function (from,set) {
   var from = from
   var setting = set.split(',').filter(function(item){
   return from.indexOf(item) > -1
@@ -153,6 +153,9 @@ function commentCount(n){
 
 var guestInfo = requestSetting(['nick','mail','link'],'nick,mail,link')
 var requiredFields = requestSetting(['nick','mail','link'],'nick,mail')
+let friends = ''.split(',')
+let master = '1619513467@qq.com'.split(',')
+let tagMeta = '博主,小伙伴,访客'.split(',')
 
 window.valine = new Valine({
   el:'#vcomment',
@@ -169,8 +172,12 @@ window.valine = new Valine({
   serverURLs: '',
   emojiCDN: '',
   emojiMaps: "",
-  enableQQ: true,
-  requiredFields: requiredFields
+  enableQQ: 1619513467,
+  requiredFields: requiredFields,
+  master: master,
+  friends: friends,
+  tagMeta: tagMeta,
+  metaPlaceholder: {"nick":"昵称/QQ号(必填)","mail":"邮箱(必填)","link":"网址(https://)"}
 });</script></div></article></main><footer id="footer" style="background-image: url(https://cdn.jsdelivr.net/gh/1619513467/cdn@master/article/4.jpg)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2020 By 依尘</div><div class="framework-info"><span>驱动 </span><a href=""><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href=""><span>Butterfly</span></a></div><div class="icp"><a><img class="icp-icon" src="https://cdn.jsdelivr.net/gh/1619513467/cdn@master/icp.png"/><span>鄂公网安备 42282302422859号</span></a><span class="footer-separator">|</span><a href="http://www.beian.miit.gov.cn/" target="_blank" rel="noopener"><span>鄂ICP备20008423号-1</span></a></div><div class="runtimeshow"><span id="timeDate"></span><span id="times"></span><script>var now = new Date();
 function createtime() {
 var grt= new Date("05/20/2020 13:14:52");
