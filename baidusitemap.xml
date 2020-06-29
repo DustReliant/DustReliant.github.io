@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.yichen.online/2019/12/05/%E8%AE%A4%E8%AF%86HTML/</loc>
+    <lastmod>2020-06-29</lastmod>
+  </url>  <url>
     <loc>https://www.yichen.online/2020/06/21/Ubuntu%E5%AE%89%E8%A3%85QQ/</loc>
     <lastmod>2020-06-21</lastmod>
   </url>  <url>
@@ -21,8 +24,5 @@
   </url>  <url>
     <loc>https://www.yichen.online/2020/06/07/HTML%20CSS%20%E6%95%B4%E7%90%86%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2020-06-08</lastmod>
-  </url>  <url>
-    <loc>https://www.yichen.online/2019/12/05/%E8%AE%A4%E8%AF%86HTML/</loc>
-    <lastmod>2020-06-04</lastmod>
   </url>
 </urlset>
